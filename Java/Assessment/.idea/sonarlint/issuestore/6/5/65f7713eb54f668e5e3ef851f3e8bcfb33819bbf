@@ -1,0 +1,11 @@
+
+a
+java:S1192	"FDefine a constant instead of duplicating this literal "Apple" 3 times.(Í¡óÊøÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(›ïÜ™úÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(šÿèg
+V	java:S125"<This block of commented-out lines of code should be removed.(«»Âžûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ì˜¡
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(×§°ûÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(Åù‘åûÿÿÿÿ
