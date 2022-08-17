@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Billing System</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <img src="index.png" alt="Billing Generator">
+        </div>
+        <!-- <div>
+            <h1>Bill Generator</h1>
+        </div> -->
+        <div>
+            <input type="number" name="purchaseamt" id="purchaseamt" placeholder="Enter Purchase Amount">
+            <p>
+                <input type="button" value="Generate Bill" id="billbutton" onclick="generate()">
+            </p>
+        </div>
+
+        <table>
+            <tr>
+                <td>Purchase Amount</td>
+                <td>
+                    <input type="text" name="resultpamt" id="resultpamt" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Discount</td>
+                <td>
+                    <input type="text" name="resultdisc" id="resultdisc" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Net Payable</td>
+                <td>
+                    <input type="text" name="resultnetpay" id="resultnetpay" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>% Savings</td>
+                <td>
+                    <input type="text" name="resultsavings" id="resultsavings" readonly disabled>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script>
+        function generate() {
+            amt = parseInt(document.getElementById('purchaseamt').value);
+
+            if (amt <= 10000) {
+                discountamt = 0.1 * amt;
+            } else if (amt <= 20000) {
+                discountamt = 0.2 * amt;
+            } else {
+                discountamt = 0.25 * amt;
+            }
+
+            netpayable = amt - discountamt;
+            savings = (discountamt / amt) * 100;
+
+            document.getElementById('resultpamt').value = amt;
+            document.getElementById('resultdisc').value = discountamt;
+            document.getElementById('resultnetpay').value = netpayable;
+            document.getElementById('resultsavings').value = savings + '%';
+        }
+    </script>
+
+
+</body>
+
+</html>

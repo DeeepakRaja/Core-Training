@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="appstyle.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>ToDos Display</title>
+</head>
+
+<body onload="getTodos()">
+    <h1>ToDo List</h1>
+    <hr>
+    <input type="text" name="userId" id="userId" placeholder="User ID">
+    <input type="text" name="todoID" id="todoID" placeholder="ID" required>
+    <input type="text" name="task" id="task" placeholder="Title"><br><br>
+    <input type="button" value="Add to ToDo List" id="add" onclick="addTodo()">
+    <input type="button" value="Update ToDo List" id="update" onclick="updateTodo()"><br><br>
+    <input type="text" name="search" id="search" placeholder="Enter task to serach">
+    <input type="button" value="Search" onclick="searchTask()"><br><br>
+    <input type="button" value="Display ToDo List" id="displayData" onclick="displayData()">
+    <br><br><br>
+    <hr>
+
+    <!-- <input type="checkbox" name="" id=""> -->
+
+    <table id="display"></table>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

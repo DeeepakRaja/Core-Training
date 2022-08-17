@@ -1,0 +1,51 @@
+body {
+    background-color: #f1faee;
+}
+
+img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    /* background-color: #f7ede2; */
+    text-align: center;
+}
+
+#purchaseamt {
+    width: auto;
+    height: 25px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin-left: 38%;
+    margin-top: 5%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px whitespace no wrap;
+    width: 25%;
+    font-weight: bold;
+}
+
+#billbutton {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px whitespace no wrap;
+    width: 7em;
+}
+
+#resultpamt,
+#resultdisc,
+#resultnetpay,
+#resultsavings {
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 30%
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: rgba(253, 252, 240, 0.893);
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    text-align: center;
+}
+
+#userId,
+#search {
+    margin-left: 35em;
+    margin-top: 2em;
+}
+
+#search {
+    margin-left: 40em;
+    width: 20%;
+}
+
+button {
+    height: 2em;
+}
+
+#add {
+    margin-left: 45.5em;
+}
+
+#displayData {
+    margin-left: 50.5em;
+    height: 2em;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    margin: 50px 250px;
+    border: 2px solid darkgray;
+}
+
+th {
+    height: 25px;
+    background-color: darkgrey;
+}
+
+th,
+td {
+    border-bottom: 1px solid coral;
+}
